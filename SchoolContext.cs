@@ -10,6 +10,6 @@ public class SchoolDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=db-school-4;Integrated Security=True");
+        optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=db-school;Integrated Security=True;Encrypt=false;");
     }
 }
